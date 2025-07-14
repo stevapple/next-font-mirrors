@@ -40,7 +40,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@next/font": "*"
+    "next": ">=13.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
