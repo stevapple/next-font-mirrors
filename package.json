@@ -2,7 +2,11 @@
   "name": "next-font-mirrors",
   "version": "1.0.0",
   "description": "A proxy for Next.js font loading with Google Fonts mirror support",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "nextjs",
     "fonts",
@@ -12,8 +16,28 @@
   ],
   "author": "YR Chen <stevapple@icloud.com>",
   "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "prepare": "npm run build"
+  },
   "dependencies": {
     "sync-fetch": "^0.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "@types/sync-fetch": "^0.4.3",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "@next/font": "*"
