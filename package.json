@@ -1,6 +1,6 @@
 {
   "name": "next-font-mirrors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A proxy for Next.js font loading with Google Fonts mirror support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
