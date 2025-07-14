@@ -1,0 +1,32 @@
+{
+  "name": "next-font-mirrors",
+  "version": "1.0.0",
+  "description": "A proxy for Next.js font loading with Google Fonts mirror support",
+  "main": "index.js",
+  "keywords": [
+    "nextjs",
+    "fonts",
+    "google-fonts",
+    "mirror",
+    "proxy"
+  ],
+  "author": "YR Chen <stevapple@icloud.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "sync-fetch": "^0.5.2"
+  },
+  "peerDependencies": {
+    "@next/font": "*"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevapple/next-font-mirrors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevapple/next-font-mirrors/issues"
+  },
+  "homepage": "https://github.com/stevapple/next-font-mirrors"
+}
