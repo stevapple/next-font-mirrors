@@ -1,0 +1,3 @@
+*.config.js -linguist-detectable
+*.config.*js -linguist-detectable
+.prettierrc.json -linguist-detectable
